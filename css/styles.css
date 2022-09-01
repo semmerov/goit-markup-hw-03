@@ -43,8 +43,7 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -56,7 +55,6 @@ body {
 .header {
     background-color: var(--main-text);
     border: 1px solid #ECECEC;
-    padding-top: 32px;
 }
 
 .header > .container {
@@ -70,7 +68,6 @@ body {
 }
 
 .header-logo, .header-logo-accent {
-    padding: 32px 0;
     margin-right: 93px;
 
     font-family: Raleway, sans-serif;
@@ -93,16 +90,23 @@ body {
     margin-left: 50px;
 }
 
-.header-list .header-item {
-    display: block;
-    padding: 32px 0;
+.header-list {
+    display: flex;
+}
 
+.header-item {
     color: var(--fond-color);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header-link {
+    color: var(--fond-color);
+    display: block;
+    padding: 32px 0;
 }
 
 .current {
@@ -119,7 +123,7 @@ body {
     margin-left: auto;
 }
 
-.header-mail {
+.header-contact {
     margin-right: 50px;
 }
 
@@ -149,15 +153,18 @@ body {
 
 .main-page {
     background-color: var(--footer-color);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.btn-container {
-    padding: 200px  280px;
-    margin-bottom: 94px;
-}
+
 .main-title {
     text-align: center;
     max-width: 696px;
+
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 900;
     font-size: 44px;
@@ -250,7 +257,7 @@ body {
 }
 
 .images-item {
-    width: calc(100% - 60px) / 3;
+    width: calc((100% - 60px) / 3);
 }
 
 .images-img {
@@ -266,6 +273,7 @@ body {
 }
 
 .team-title {
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -276,7 +284,6 @@ body {
 }
 
 .team-item {
-    padding-bottom: 30px;
     width: calc(100% - 90px) / 4; 
 
     background-color: var(--main-text);
@@ -288,9 +295,13 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
 
     border-radius: 0px;
+}
+
+.subtitle-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-subtitle {
@@ -347,6 +358,10 @@ body {
 .footer-list {
     display: block;
     gap: 9px;
+}
+
+.footer-item-first, .footer-item-second {
+    margin-bottom: 9px;
 }
 .footer-link {
     font-size: 14px;
@@ -433,7 +448,7 @@ body {
 }
 
 .project-item {
-    width: calc(100% - 60px) / 3;
+    width: calc((100% - 60px) / 3);
 }
 
 .project-link {
@@ -451,7 +466,7 @@ body {
     border: 1px solid var(--light-grey);
     background-color: var(--main-text);
     border-top: none;
-    padding: 20px 23px;
+    padding: 20px 24px;
 }
 
 .project-title {
